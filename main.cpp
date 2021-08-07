@@ -10,14 +10,14 @@ int main() {
 	cout << "################MANCALA################" << endl << endl;
 	int pits, stones;
 	do {
-		cout << "Cuantos pozos p? 1<p<8 (for default type 0)" << endl;
+		cout << "Cuantos pozos/huecos p? Numero entre 1 al 7 *Se sugieren 4*" << endl;
 		cin >> pits;
 		if (pits == 0) {
 			pits = DEFAULT_PITS;
 		}
 	} while (!((pits > 1) && (pits < 8)));
 	do {
-		cout << "Cuantas semillas s? 1<s<7 (for default type 0)" << endl;
+		cout << "Cuantas semillas/piedras s? Numero entre 1 al 6" << endl;
 		cin >> stones;
 		if (stones == 0) {
 			stones = DEFAULT_STONES;
